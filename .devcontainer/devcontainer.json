@@ -8,6 +8,7 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {},
 		"ghcr.io/devcontainers-contrib/features/homebrew-package:1": {},
+		"ghcr.io/devcontainers-contrib/features/mysql-homebrew:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/itsmechlark/features/redis-server:1": {}
 	},
