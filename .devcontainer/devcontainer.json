@@ -6,10 +6,11 @@
 	"image": "mcr.microsoft.com/devcontainers/php:8",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+			"packages": "php8.3-mysql"
+		},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/itsmechlark/features/redis-server:1": {},
-		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {},
-		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {}
+		"ghcr.io/itsmechlark/features/redis-server:1": {}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
@@ -30,8 +31,6 @@
 			"onAutoForward": "notify"
 		}
 	}
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
