@@ -3,14 +3,10 @@
 {
 	"name": "Docker in Docker",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"version": "${templateOption:dockerVersion}",
-			"enableNonRootDocker": "${templateOption:enableNonRootDocker}",
-			"moby": "${templateOption:moby}"
-		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		 "ghcr.io/devcontainers/features/php:1": {}
 	}
 
